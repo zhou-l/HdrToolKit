@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="9a79015c-9571-4846-8b00-ac0aa0fe5458" Publisher="CN=iko4" Version="0.2.1.0" />
+  <mp:PhoneIdentity PhoneProductId="9a79015c-9571-4846-8b00-ac0aa0fe5458" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>HdrToolkit.UWP</DisplayName>
+    <PublisherDisplayName>iko4</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="HdrToolkit_UWP.App">
+      <uap:VisualElements DisplayName="HdrToolkit.UWP" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="HdrToolkit.UWP" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\MediumLogo.png" ShortName="HdrTk">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.fileTypeAssociation">
+          <uap:FileTypeAssociation Name="hdr">
+            <uap:DisplayName>HDR</uap:DisplayName>
+            <uap:InfoTip>HDR-Radiance</uap:InfoTip>
+            <uap:SupportedFileTypes>
+              <uap:FileType ContentType="image/vnd.radiance">.hdr</uap:FileType>
+              <uap:FileType ContentType="image/vnd.radiance">.rgbe</uap:FileType>
+            </uap:SupportedFileTypes>
+          </uap:FileTypeAssociation>
+        </uap:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>
