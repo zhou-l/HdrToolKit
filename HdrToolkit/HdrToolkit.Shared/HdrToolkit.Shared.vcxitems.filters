@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CLCompile Include="$(MSBuildThisFileDirectory)App.xaml.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)App.xaml.h" />
+    <CLCompile Include="$(MSBuildThisFileDirectory)pch.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DirectXPanelBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderToolkit.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)RenderTexture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)HdrPanel.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImageDetails.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Parameters.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ImageIO.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)DisplayParameters.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ColorConverter.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Color.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)fft.cpp">
+      <Filter>Intel-FFT</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mantiuk06.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)contrast_domain.cpp">
+      <Filter>pfstmo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ColorMap.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)getopt.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pde.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pde_fft.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pfs.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)tmo_fattal02.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)compression_tmo.cpp">
+      <Filter>pfstmo</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Mai11.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)DirectXPanelBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DirectXHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)StepTimer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderToolkit.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)RenderTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)HdrPanel.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImageDetails.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ColorConverter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Parameters.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ConstantBuffers.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ImageIO.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)DisplayParameters.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Color.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)fft.h">
+      <Filter>Intel-FFT</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mantiuk06.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)contrast_domain.h">
+      <Filter>pfstmo</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MainPage.xaml.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ColorMap.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pde.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pfstmo.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)tmo_fattal02.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)kmeans.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)compression_tmo.h">
+      <Filter>pfstmo</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)psftmo_def.h">
+      <Filter>pfstmo</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Mai11.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)dkm.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)dkm_utils.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TextureRenderPixelShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)TextureRenderVertexShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)GammaCorrectionPixelShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ConstantMultiplicationPixelShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ComplexMultiplicationComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)SumComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)MaxComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Division1ComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)MakeMaskComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)CopyComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Mantiuk06_DownSampleComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)Mantiuk06_UpsampleComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)Mantiuk06_GradientComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)AdditionComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)SubtractionComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ConstantMultiplicationComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)MultiplicationComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Mantiuk06_DivergenceComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)Mantiuk06_ScaleFactorComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)ScalarDivisionComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)LowerBoundComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Mantiuk06_TransformToRComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)Mantiuk06_TransformToGComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)Log10ComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Exp10ComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ScalarMultiplicationComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)MinComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ConstantAdditionComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ConstantDivisionComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)MultiplicationEqualComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ConstantMultiplicationEqualComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)BlurComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)LaplaceComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ScalarTextureRenderPixelShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ScalarGammaCorrectionPixelShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)PsfComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)UpperBoundComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ClampComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)ShiftComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)AbsoluteComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)LinearCombinationEqualComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)LinearCombinationComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)LuminanceComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)EComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)PupilVertexShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)PupilFiberGeometryShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)PupilFiberPixelShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)PupilParticleGeometryShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)PupilParticlePixelShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)LogComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)row.forward.fft.hlsl">
+      <Filter>Intel-FFT</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)row.inverse.fft.hlsl">
+      <Filter>Intel-FFT</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)column.forward.fft.hlsl">
+      <Filter>Intel-FFT</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)column.inverse.fft.hlsl">
+      <Filter>Intel-FFT</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)MaskComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)FindExtremaComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)Reinhard02ComputeShader.hlsl" />
+    <FxCompile Include="$(MSBuildThisFileDirectory)ColorMapComputeShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)GlareLensPixelShader.hlsl">
+      <Filter>RenderToolkit-Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Intel-FFT">
+      <UniqueIdentifier>{d76a672a-aacf-4501-b202-3b8c3e98e983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderToolkit-Shaders">
+      <UniqueIdentifier>{0ef0a47e-4d74-418e-b19e-a83936ffc7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pfstmo">
+      <UniqueIdentifier>{4698d04b-ea62-45ff-bccc-f27449518f5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="strings">
+      <UniqueIdentifier>{ec04f6e0-b12d-48f7-86f0-33a11117aeaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="strings\en-US">
+      <UniqueIdentifier>{b64d2e3d-611b-4d51-8f1f-072b3f3d5a68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="strings\de-DE">
+      <UniqueIdentifier>{84d8d267-8fa3-48b6-b36e-2f2950bc7de8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)glare_eyelashes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\en-US\Resources.resw">
+      <Filter>strings\en-US</Filter>
+    </PRIResource>
+    <PRIResource Include="$(MSBuildThisFileDirectory)strings\de-DE\Resources.resw">
+      <Filter>strings\de-DE</Filter>
+    </PRIResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+  </ItemGroup>
+</Project>
